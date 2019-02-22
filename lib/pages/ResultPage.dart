@@ -104,7 +104,7 @@ class _ResultPageState extends State<ResultPage> {
 
   _sharedSetting(){
     _nameList.asMap().forEach((index, data){
-      _sharedText += "$data-${_randomResult[index]}";
+      _sharedText += "${data.name}-${_randomResult[index]}";
       if (index != _nameList.length-1){
         _sharedText += "\n";
       }
